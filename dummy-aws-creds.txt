@@ -1,0 +1,2 @@
+##This is a dummy file. 
+##Put your own aws creds here for secret testing
