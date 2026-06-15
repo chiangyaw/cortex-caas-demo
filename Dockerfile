@@ -5,7 +5,7 @@ FROM tomcat:9.0.59-jdk11-openjdk-slim
 RUN apt-get update && apt-get install -y wget curl && rm -rf /usr/local/tomcat/webapps/*
 
 # 3. Copy the compiled vulnerable Spring application
-COPY target/demo-app.war /usr/local/tomcat/webapps/ROOT.war
+COPY app/target/helloworld.war /usr/local/tomcat/webapps/ROOT.war
 
 # 4. Create malware directory
 RUN mkdir -p /tmp/malware && chmod 777 /tmp/malware
